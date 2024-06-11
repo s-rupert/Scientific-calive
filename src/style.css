@@ -1,0 +1,64 @@
+
+#toggleturnnum{
+    display: none;
+}
+
+#toggleturnfx{
+    display: none;
+}
+@media screen and (max-width:575px) {
+
+    #num{
+        display: block;
+    }
+    #fx{
+        display: none;
+    }
+    
+#toggle div{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0,0.3);
+    cursor: pointer;
+}
+
+#numt{
+    border: 1px solid black;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+#fxt{
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+#fx-num{
+    position: absolute;
+    margin-top: -242px;
+}
+
+#toggleturnnum:checked~div #num{
+    display: block;
+}
+#toggleturnnum:checked~ div #fx{
+    display: none;
+}
+#toggleturnnum:checked~ div #numt{
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+#toggleturnfx:checked~div #num{
+    display: none;
+}
+#toggleturnfx:checked~ div #fx{
+    display: block;
+}
+#toggleturnfx:checked~ div #fxt{
+    background-color: rgba(0, 0, 0,0.3);
+}
+}
+
